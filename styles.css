@@ -62,9 +62,43 @@ a {
     left: 0;
 }
 
-.animated-lily {
+@keyframes rotateSwing {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-2deg);
+    }
+    50% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-3deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+.lily1 {
+    margin-right: 20px;
+    animation: rotateSwing 2s infinite;
     img {
         height: 100vh;
+    }
+}
+
+.container_works {
+    display: flex;
+    justify-content: space-between;
+    height: 1400px;
+}
+
+.works {
+    margin-top: 100px;
+    flex-wrap: wrap;
+    img{
+        height: 400px;
     }
 }
 
@@ -72,6 +106,55 @@ a {
     margin-left: 60px;
     padding: 90px;
     font-size: 4em;
+}    
+
+.pic {
+    align-content: center;
+    margin-right: 200px;
+    img {
+        max-height: 80vh;
+    }
+}
+
+.container_contacts {
+    display: flex;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    font-family: 'Neue Regrade', sans-serif;
+    font-size: 48px;
+    padding: 20px;
+}
+
+.contacts {
+    list-style: none;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Neue Regrade', sans-serif;
+}
+
+a[href^="mailto:"] {
+    text-decoration: none;
+    color: white;
+  }
+
+a[href^="mailto:"]:hover {
+    color: #7C0000;
+}
+
+a[href^="tel:"] {
+    text-decoration: none;
+    color: white;
+  }
+
+a[href^="tel:"]:hover {
+    color: #7C0000;
+}
+
+.tg:hover {
+    color: #7C0000;
 }
 
 html{

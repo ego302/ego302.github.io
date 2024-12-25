@@ -188,6 +188,17 @@ a[href^="tel:"]:hover {
     color: #7C0000;
 }
 
+@media (prefers-reduced-motion) {
+    * {
+        &,
+        &::before,
+        &::after {
+            animation: none !important;
+            transition: 0.01s !important;
+        }
+    }
+}
+
 html{
     scroll-behavior: smooth;
 }
